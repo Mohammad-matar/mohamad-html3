@@ -111,13 +111,13 @@ margin: 10px;
 button{
     display: block;
     margin: 10px auto;
-    padding: 10px;
     background-color: white;
     border: 1px solid #f77104;
 }
 button a{
     color: rgb(245, 102, 7);
     font-style: bold;
+    font-size: medium;
 }
 .menuimages{
     width: 32%;
