@@ -11,7 +11,7 @@ grid-template-rows => number of rows height
         display: grid;
         grid-template-areas: 'Champions Description Description' 'Champions Subscription OtherServices ';
         grid-gap: 10px;
-        margin: 5px 300px;
+        margin: 0 300px;
         color: rgb(255, 255, 255);
         background-color: #f0600070;
         
@@ -42,14 +42,14 @@ grid-template-rows => number of rows height
 header{
     background-image: url("legend.jpg");
     height: 500px;
-    margin:5px 300px;
-    background-color: rgb(243, 249, 250);
+    margin: 0 300px;
+    background-color: rgb(184, 175, 49);
     background-position: center;
 
 
 }
 header{
-    color: rgb(251, 255, 0);
+    color: rgba(0, 0, 0, 0.521);
     font-size: xx-large;
     text-align: center;
     padding: 100px;
@@ -57,18 +57,17 @@ header{
 
 
 nav{
-    margin: 5px 300px;
+    margin: 0px 300px;
     display: flex;
+    flex-direction: row;
     justify-content: space-around;
     background-color: orangered;
-    padding: 20px;
     
 }
 nav a{
 color: rgb(250, 250, 250);
 text-decoration: none;
 }
-
 
 footer{
     background-color: orangered;
@@ -133,3 +132,29 @@ body {
 hr{
     margin: 10px 300px;
 }
+.a{
+    font-size: 100px;
+    text-shadow: 5px 2px;
+    background-color: rgba(255, 188, 4, 0.103);
+}
+.linkText:hover > a{
+
+    color:#f77104;
+    
+}
+.linkText:hover {
+    background-color: black;
+}
+
+.linkText{
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    padding: 0 10px;
+    
+}
+
+
+
