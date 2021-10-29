@@ -5,74 +5,78 @@ display grid \ inline-grid
 -grid-template*columns => number of columns In =>  [px. %. auto, repeat()] 
 grid-template-rows => number of rows height 
 */
-*{
-    box-sizing: border-box;
-}
 
-.parent{
-    margin: 20px auto;
-    width: 800px;
-    height: 500px;
-    background-color: rgb(252, 250, 250);
-    display: grid;
-    grid-template-columns:repeat(4, 1fr) ;
-    grid-template-rows: repeat(3, 1fr);
-    row-gap: 20px;
-    column-gap: 10px;
-}
-.parent{
-background-color: rgb(121, 174, 218);
-color: white;
-padding: 20px;
-font-size: 30px;
-font-weight: bold;
-text-align: center;
-}
+
+.container{
+        display: grid;
+        grid-template-areas: 'Champions Description Description' 'Champions Subscription OtherServices ';
+        grid-gap: 10px;
+        margin: 5px 300px;
+        color: rgb(255, 255, 255);
+        background-color: #f0600070;
+        
+    }
+        
+
+.d1{
+    grid-area: Champions;
+  }
+  .d2{
+    grid-area: Description;
+  }
+  
+  .d3{
+    grid-area: Subscription;
+  }
+  .d4{
+    grid-area: OtherServices;
+  }
+
+.item{
+    padding: 10px;
+  
+  }
+
 
 
 header{
-    background-image: url("image1.jpg");
-    height: 600px;
+    background-image: url("legend.jpg");
+    height: 500px;
     margin:5px 300px;
     background-color: rgb(243, 249, 250);
+    background-position: center;
 
 
 }
 header{
-    color: rgb(232, 235, 236);
+    color: rgb(251, 255, 0);
     font-size: xx-large;
     text-align: center;
     padding: 100px;
 }
 
-body{
-    background-color: rgba(33, 76, 133, 0.8);
-}
+
 nav{
-    margin: 0px 200px;
+    margin: 5px 300px;
     display: flex;
     justify-content: space-around;
-    background-color: rgb(1, 32, 73);
+    background-color: orangered;
     padding: 20px;
     
 }
 nav a{
-color: rgb(252, 245, 245);
+color: rgb(250, 250, 250);
 text-decoration: none;
 }
 
-p{
-    color: white;
-    text-align: center;
-    font-size: xx-large;
-}
+
 footer{
-    background-color: rgba(6, 28, 100, 0.8);
+    background-color: orangered;
     padding: 10px;
     text-decoration:none;
     color: white;
     text-align: center;
-    margin: auto;
+    margin: 0px 300px;
     width: 960x;
     vertical-align: middle;
     text-transform: inline-block;
@@ -84,4 +88,48 @@ footer{
      text-transform: inline-block;
      vertical-align: middle;
      color: #fff;
+}
+
+.parent div{
+    border: solid 1px #000;
+}
+.style{
+margin: 10px;    
+}
+.style1{
+
+    margin: 10px 10px 10px 10px;
+    padding: 15px 5px 20px 0px;
+    
+}
+.style2{
+    margin-left: 25px;
+}
+.p{
+    margin: 0px 0px 0px 50px;
+    
+}
+button{
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+    background-color: white;
+    border: 1px solid #f77104;
+}
+button a{
+    color: rgb(245, 102, 7);
+    font-style: bold;
+}
+.menuimages{
+    width: 32%;
+    height: 200px;
+
+}
+
+
+body {
+    background-color: black;
+}
+hr{
+    margin: 10px 300px;
 }
